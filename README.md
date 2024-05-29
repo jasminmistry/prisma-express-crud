@@ -2,7 +2,7 @@
 
 To run project first run 
 
-
+For dev rename .env.local to .env
 
 ```bash
   npm install
