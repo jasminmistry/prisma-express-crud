@@ -5,10 +5,10 @@ const register = async (req, res, buffer) => {
     try {
         await teacherCreate(teacher, students);
     } catch (e) {
-        return res.json({ message: 'Error occured' });
+        console.log(e);
+        return res.json({ message: 'Error occurred' });
     }
 
-    console.log(teacher, students);
     return res.status(204).send();
 };
 
